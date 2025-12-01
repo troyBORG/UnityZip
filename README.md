@@ -30,19 +30,6 @@ A simple tool to extract Unity package (`.unitypackage`) files and get usable fi
      - `Icons/` - Menu sprites and UI icons (optional for Resonite)
      - `Extracted Unity/` - Complete Unity project structure (for reference - contains everything)
 
-### Examples
-
-```bash
-# Extract raw usable files (recommended)
-UnityZip.exe "MyPackage.unitypackage" --raw-only
-
-# Extract all files including Unity internal files
-UnityZip.exe "MyPackage.unitypackage"
-
-# Extract and overwrite existing files
-UnityZip.exe "MyPackage.unitypackage" --raw-only --overwrite
-```
-
 ## Command Line Options
 
 - `--raw-only` - Extract only usable files (FBX, PNG, JPG, etc.). Skips Unity internal files like .meta, .prefab, .mat
@@ -54,7 +41,7 @@ UnityZip.exe "MyPackage.unitypackage" --raw-only --overwrite
 - ✅ **Reconstructs original file paths** from Unity's internal structure
 - ✅ **Detects and extracts raw files**: FBX models, PNG/JPG textures, OBJ files, etc.
 - ✅ **Smart organization**: Automatically separates models, textures, and icons into separate folders
-- ✅ **Excludes GoGo Locomotion icons** from the Icons folder (they go to Textures instead)
+- ✅ **Excludes GoGo Locomotion icons** from the Icons folders
 - ✅ By default, skips existing files to prevent accidental overwrites
 
 ## Output Structure
